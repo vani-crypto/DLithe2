@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Basic HTML Page</title>
+        <style>
+            section { display: none; }
+            :target { display: block; }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Welcome to the Website</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#table">Table</a></li>
+            </ul>
+        </nav>
+        <section id="home">
+            <h2>Home Page</h2>
+            <p>Welcome to HOME  PAGE.</p>
+        </section>
+        
+        <section id="about">
+            <h2>About</h2>
+            <p>Working as an intern at Dlithe.</p>
+        </section>
+        
+        <section id="contact">
+            <h2>Contact Section</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+                
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+        <section id="table">
+            <h2>List of interns</h2>
+            <table border="4">
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>USn</th>
+                </tr>
+                <tr>
+                    <td>Vani</td>
+                    <td>21</td>
+                    <td>4PM21IS058</td>
+                </tr>
+                <tr>
+                    <td>Nischitha</td>
+                    <td>21</td>
+                    <td>4PM21IS035</td>
+                </tr>
+                <tr>
+                    <td>Kavya</td>
+                    <td>20</td>
+                    <td>4PM21IS026</td>
+                </tr>
+            </table>
+        </section>
+        <footer>
+            <p>&copy; 2025 Dlithe. All rights reserved.</p>
+        </footer>
+    </body>
+    </body>
+</html>
