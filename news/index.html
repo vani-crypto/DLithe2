@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Job News - Home</title>
+    
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Header */
+        .header {
+            background-color: lightgray;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Navigation Menu */
+        .menu {
+            width: 90%;
+            margin: 10px auto;
+            background-color: #333;
+            overflow: hidden;
+            border-radius: 5px;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .menu a {
+            display: inline-block;
+            color: white;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .menu a:hover {
+            background-color: #575757;
+        }
+
+        /* Search Bar */
+        .search-container {
+            display: inline-block;
+            margin-left: 20px;
+        }
+
+        .search-container input[type="text"] {
+            padding: 8px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .search-container input[type="submit"] {
+            padding: 8px 12px;
+            font-size: 14px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .search-container input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        /* News Container */
+        .news-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .news-card {
+            width: 300px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .news-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .news-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .news-card-content {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .news-card h3 {
+            font-size: 16px;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .news-card p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .news-card a {
+            display: block;
+            color: #007BFF;
+            font-weight: bold;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+
+        .news-card a:hover {
+            color: #ff6600;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: lightgray;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .news-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .news-card {
+                width: 90%;
+            }
+        }
+        .section.ad {
+            display: flex;
+            justify-content: center; /* Center the cards horizontally */
+            align-items: center; /* Center items vertically */
+            gap: 20px; /* Space between cards */
+            flex-wrap: wrap; /* Ensure responsiveness */
+            text-align: center;
+        }
+        
+        .ad .card {
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 250px; /* Set a fixed width */
+            text-align: center;
+        }
+        
+        /* Image Styling Inside Cards */
+        .ad .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        
+        /* Align Text & Links */
+        .ad .card h3 {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+        
+        .ad .card a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .ad .card a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <div class="header">
+        <h1>📰 IT Job News Portal 🚀</h1>
+        <p>🔹 Stay Updated | 🔹 Stay Informed | 🔹 Stay Ahead</p>
+    </div>
+
+    <!-- MENU WITH SEARCH BAR -->
+    <div class="menu">
+        <a href="index.html">🏠 Home</a>
+        <a href="news.html">📢 Job News</a>
+        <a href="tech.html">💡 Trending Tech</a>
+        <a href="events.html">🎟️ Events</a>
+        <a href="companies.html">🏢 Top Companies</a>
+        <a href="#">🌟 Success Stories</a>
+        <a href="#">📞 Contact</a>
+        
+        <div class="search-container">
+            <form action="search.html" method="GET">
+                <input type="text" name="query" placeholder="🔎 Search Jobs..." size="15">
+                <input type="submit" value="Search">
+            </form>
+        </div>
+    </div>
+
+    <!-- WELCOME SECTION -->
+    <div class="news-container">
+        <div class="news-card">
+            <div class="news-card-content">
+                <h2>🚀 Welcome to IT Job News Portal!</h2>
+                <p>Your one-stop hub for job trends, career guidance, and industry insights.</p>
+                <p>Find <strong>top hiring companies</strong>, <strong>latest job opportunities</strong>, and <strong>trending IT skills</strong> right here.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- FEATURED NEWS -->
+    <div class="news-container">
+        <div class="news-card">
+            <img src="g1.jpeg" alt="AI Job">
+            <div class="news-card-content">
+                <h3>🔥 Google Hiring AI Engineers</h3>
+                <p>Apply now for AI Engineer roles at Google!</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+
+        <div class="news-card">
+            <img src="g2.jpeg" alt="Cloud Computing">
+            <div class="news-card-content">
+                <h3>🚀 Amazon Expanding Cloud Teams</h3>
+                <p>Amazon is hiring AWS experts! Apply now.</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+
+        <div class="news-card">
+            <img src="g3.jpeg" alt="Cybersecurity">
+            <div class="news-card-content">
+                <h3>🔒 IBM Needs Cybersecurity Experts</h3>
+                <p>IBM is looking for cybersecurity professionals.</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+
+        <div class="news-card">
+            <img src="g4.jpg" alt="Software Developer">
+            <div class="news-card-content">
+                <h3>📌 Tesla Hiring Software Engineers</h3>
+                <p>Tesla is expanding its self-driving team.</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- QUICK JOB SEARCH SECTION -->
+    <div class="news-container">
+        <div class="news-card">
+            <div class="news-card-content">
+                <h3>🔎 Looking for a Job?</h3>
+                <p>Start your search now and apply to your dream job today!</p>
+                <p>👉 <a href="news.html">Browse Latest Openings</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SUCCESS STORIES -->
+    <div class="news-container">
+        <div class="news-card">
+            <div class="news-card-content">
+                <h2>🌟 Success Begins Here!</h2>
+                <p>💡 "The future belongs to those who prepare for it today!"</p>
+                <p>Explore <a href="stories.html">Success Stories</a> to get inspired.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section ad">
+    
+    <div class="card">
+        <h2>My Portfolio</h2>
+        <p>Know all the IT jobs in India. </p>
+        <img src="vn.png" alt="Goa Beach">
+        <h3>some of my works</h3>
+        <h3><a href="../portfolio/portfolio.html">reach me out</a></h3>
+    </div>
+    <div class="card">
+        <h1>Explore india </h1>
+        <p>Explore diversity of India  </p>
+        <img src="p1.jpeg" alt="Goa Beach">
+        
+        <h3><a href="../travel/index2.html">check here</a></h3>
+    </div>
+</section>
+
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <p>&copy; 2025 IT Job News Portal | All Rights Reserved</p>
+        <p>Follow us: <a href="#">LinkedIn</a> | <a href="#">Twitter</a> | <a href="#">Facebook</a></p>
+    </div>
+
+</body>
+</html>

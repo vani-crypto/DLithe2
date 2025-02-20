@@ -1,0 +1,280 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9ccf9;
+    text-align: center;
+}
+
+/* Header */
+/* Header Styling */
+header {
+    background-color: #e685d3;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Header Content Layout */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 5px;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    padding: 8px;
+    width: 200px;
+    font-size: 16px;
+}
+
+.search-bar button {
+    background: #e4bce2;
+    color: rgb(16, 16, 16);
+    border-radius: 10px;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.search-bar button:hover {
+    background: #f8abf0;
+}
+
+/* Navigation Bar */
+nav {
+    width: 100%;
+    background-color:  #e685d3;
+    border-radius: 50px;
+    
+}
+
+nav ul {
+    list-style: none;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #dea0ef; /* Light purple */
+    border-radius: 30px; /* Curved edges */
+    padding: 10px 40px; /* Spacing inside the box */
+    display: flex;
+    
+}
+
+nav ul li {
+    margin: 0;
+    
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+   
+}
+
+nav ul li a:hover {
+    background-color: #eaace9;
+}
+
+
+/* Hero Image */
+.hero {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Section Styling */
+.section {
+    background: rgb(223, 139, 236);
+    margin: 30px auto;
+    padding: 20px;
+    width: 80%;
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Destinations & Culture Section */
+.destinations {
+    background-color: #e38ce2;
+}
+.culture {
+    background-color: #e056cc;
+}
+
+/* Destination Cards */
+.destination-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    display: block;
+}
+
+.card h3 {
+    margin: 10px 0;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* TRIP IDEAS SECTION */
+.trip-ideas {
+    padding: 40px;
+    background-color: #e855d7;
+    text-align: center;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+/* Category Buttons */
+.trip-filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.trip-filters button {
+    background-color: #e0e0e0;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.trip-filters button.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Destination Cards Grid */
+.trip-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Trip Card */
+.trip-card {
+    display: flex;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 350px;
+    margin: auto;
+    text-align: left;
+}
+
+.trip-card img {
+    width: 40%;
+    height: auto;
+    object-fit: cover;
+}
+
+.trip-info {
+    padding: 10px;
+    width: 60%;
+}
+
+.trip-info h3 {
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+.trip-info p {
+    margin: 2px 0;
+    color: gray;
+    font-size: 14px;
+}
+
+.section.ad {
+    display: flex;
+    justify-content: center; /* Center the cards horizontally */
+    align-items: center; /* Center items vertically */
+    gap: 20px; /* Space between cards */
+    flex-wrap: wrap; /* Ensure responsiveness */
+    text-align: center;
+}
+
+/* Ensuring Cards are Aligned */
+.ad .card {
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 250px; /* Set a fixed width */
+    text-align: center;
+}
+
+/* Image Styling Inside Cards */
+.ad .card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Align Text & Links */
+.ad .card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.ad .card a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.ad .card a:hover {
+    text-decoration: underline;
+}

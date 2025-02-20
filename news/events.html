@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcoming Events</title>
+
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+            animation: fadeIn 1s ease-in;
+        }
+
+        /* Fade-in animation */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Header */
+        h1 {
+            color: #333;
+            padding: 15px;
+            animation: slideDown 1s ease-in-out;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        hr {
+            width: 60%;
+            border: 1px solid #ddd;
+        }
+
+        /* Slide-down animation */
+        @keyframes slideDown {
+            from { transform: translateY(-100%); }
+            to { transform: translateY(0); }
+        }
+
+        /* Table Styling */
+        table {
+            width: 70%;
+            background-color: white;
+            border-collapse: collapse;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            margin: 20px auto;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        table:hover {
+            transform: scale(1.02);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        td {
+            padding: 20px;
+        }
+
+        h2 {
+            color: #007bff;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            font-size: 18px;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            transition: background-color 0.3s, transform 0.3s;
+            cursor: pointer;
+        }
+
+        li:hover {
+            background-color: #f8f9fa;
+            transform: translateX(10px);
+        }
+
+        /* Event Animation */
+        @keyframes glow {
+            0% { text-shadow: 0 0 5px #ff6600; }
+            50% { text-shadow: 0 0 20px #ff3300; }
+            100% { text-shadow: 0 0 5px #ff6600; }
+        }
+
+        strong {
+            color: #ff6600;
+            animation: glow 1.5s infinite alternate;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🎟️ IT Job Fairs & Hackathons</h1>
+    <p>Find upcoming events to boost your career.</p>
+    <hr>
+
+    <table border="1">
+        <tr>
+            <td>
+                <h2>📅 Upcoming Events</h2>
+                <ul>
+                    <li><strong>Google AI Hackathon</strong> - April 15, 2025</li>
+                    <li><strong>Amazon Tech Hiring Fair</strong> - May 5, 2025</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
