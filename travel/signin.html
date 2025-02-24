@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - Explore India</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-page">
+
+    <div class="auth-container">
+        <h2>Sign In</h2>
+        <form id="signin-form">
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Sign In</button>
+        </form>
+        <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+    </div>
+
+    <script>
+        
+
+        document.getElementById("signin-form").addEventListener("submit", function (event) {
+            event.preventDefault();
+            let email = document.getElementById("email").value;
+            let password = document.getElementById("password").value;
+            let user = JSON.parse(localStorage.getItem("user"));
+        
+            if (user && user.email === email && user.password === password) {
+                localStorage.setItem("loggedIn", "true");
+        
+                // Redirect user back to the intended page
+                let returnUrl = localStorage.getItem("returnUrl") || "index.html";
+                localStorage.removeItem("returnUrl"); // Clear return URL
+                window.location.href = returnUrl;
+            } else {
+                alert("Invalid credentials!");
+            }
+        });
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Culture</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script>
+    function redirectToSignIn() {
+        localStorage.setItem("returnUrl", window.location.href);
+        window.location.href = 'signin.html';
+    }
+</script>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Explore India</h1>
+            <div class="search-bar">
+                <input type="text" placeholder="Search destinations...">
+                <button type="submit">Search</button>
+            </div>
+        </div>
+    
+        <!-- Navigation Bar -->
+        <nav>
+            <ul>
+                <li><a href="index2.html">Home</a></li>
+                <li><a href="destination.htm">Destinations</a></li>
+                <li><a href="culture.html">Culture</a></li>
+                <li><a href="trip.html">Trip Ideas</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section>
+        <h2>India's Rich Traditions</h2>
+        <p>Experience the vibrant festivals, music, and art of India.</p>
+    </section>
+
+    <section class="section destinations">
+        <h2>Top Destinations 🏝️</h2>
+        <div class="destination-cards">
+            <div class="card">
+                <img src="b3.jpeg" alt="Taj Mahal">
+                <h3>Majuli, Assam</h3>
+                <p> Nestled in the Brahmaputra River, Majuli is the world's largest river island. Renowned for its vibrant culture and scenic landscapes, it offers a serene escape into nature. </p>
+                <button onclick="redirectToSignIn()">Book Now</button>
+
+            </div>
+
+            <div class="card">
+                <img src="b2.jpg" alt="Goa Beach">
+                <h3>Hampi, Karnataka</h3>
+                <p>Once the capital of the Vijayanagara Empire, Hampi is dotted with impressive ruins and temples. Its unique boulder-strewn landscape adds to its historical charm.</p>
+                <button onclick="redirectToSignIn()">Book Now</button>
+
+            </div>
+
+            <div class="card">
+                <img src="b1.jpg" alt="Kerala Backwaters">
+                <h3>Spiti Valley, Himachal Pradesh</h3>
+                <p>Known for its rugged terrain and ancient monasteries, Spiti Valley offers a glimpse into Tibetan culture. The stark beauty of its high-altitude desert landscape is mesmerizing. .</p>
+                <button onclick="redirectToSignIn()">Book Now</button>
+
+            </div>
+
+            <div class="card">
+                <img src="j1.jpg" alt="jaipur">
+                <h3>Jaipur, Rajasthan</h3>
+                <p>Experience the royal heritage of Rajasthan with stunning forts, palaces, and vibrant bazaars.</p>
+                <button onclick="redirectToSignIn()">Book Now</button>
+            </div><br>
+
+            <div class="card">
+                <img src="j3.jpeg" alt="Kerala Backwaters">
+                <h3>Goa beaches, Goa</h3>
+                <p>Relax on golden sands, indulge in thrilling water sports, and explore lively beach shacks.</p>
+                <button onclick="redirectToSignIn()">Book Now</button>
+            </div>
+
+            <div class="card">
+                <img src="j4.jpeg" alt="Kerala Backwaters">
+                <h3>Manali, Himachal Pradesh</h3>
+                <p>Known for its rugged terrain and ancient monasteries, Spiti Valley offers a glimpse into Tibetan culture. The stark beauty of its high-altitude desert landscape is mesmerizing. .</p>
+                <button onclick="redirectToSignIn()">Book Now</button>
+            </div>
+
+            <div class="card">
+                <img src="p1.jpg" alt="Kerala Backwaters">
+                <h3>Jaipur, Rajasthan</h3>
+                <p>Surrounded by pink forts rich heritage.</p>
+                <button onclick="redirectToSignIn()">Book Now</button>
+            </div>
+
+            <div class="card">
+                <img src="j2.jpg" alt="Kerala Backwaters">
+                <h3>Kerala backwaters, Kerala</h3>
+                <p>Enjoy serene houseboat cruises through lush green waterways and coconut groves.</p>
+                <button onclick="redirectToSignIn()">Book Now</button>
+            </div>
+
+            <br>
+        </div>
+    </section>
+
+    
+   
+</body>
+</html>

@@ -22,9 +22,9 @@
     <!-- Navigation Bar -->
     <nav>
         <ul>
-            <li><a href="#">Home</a></li>
+            <li><a href="index2.html">Home</a></li>
             <li><a href="#">Destinations</a></li>
-            <li><a href="#">Culture</a></li>
+            <li><a href="culture.html">Culture</a></li>
             <li><a href="#">Trip Ideas</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
@@ -95,17 +95,18 @@
 
     <!-- Filters (Category Tabs) -->
     <div class="trip-filters">
-        <button class="active">Family-friendly</button>
-        <button>Romantic</button>
-        <button>Nature</button>
-        <button>Beach</button>
-        <button>Backpacking</button>
-        <button>Cultural</button>
+        <button class="filter-button active" data-category="all">All</button>
+        <button class="filter-button" data-category="family">Family-friendly</button>
+        <button class="filter-button" data-category="romantic">Romantic</button>
+        <button class="filter-button" data-category="nature">Nature</button>
+        <button class="filter-button" data-category="beach">Beach</button>
+        <button class="filter-button" data-category="backpacking">Backpacking</button>
+        <button class="filter-button" data-category="cultural">Cultural</button>
     </div>
-
+    
     <!-- Destination Cards -->
     <div class="trip-cards">
-        <div class="trip-card">
+        <div class="trip-card" data-category="family">
             <img src="j1.jpg" alt="Jaipur">
             <div class="trip-info">
                 <h3>Jaipur</h3>
@@ -114,7 +115,7 @@
             </div>
         </div>
 
-        <div class="trip-card">
+        <div class="trip-card" data-category="nature">
             <img src="j2.jpg" alt="Kerala">
             <div class="trip-info">
                 <h3>Kerala Backwaters</h3>
@@ -123,7 +124,7 @@
             </div>
         </div>
 
-        <div class="trip-card">
+        <div class="trip-card" data-category="beach">
             <img src="j3.jpeg" alt="Goa">
             <div class="trip-info">
                 <h3>Goa Beaches</h3>
@@ -132,7 +133,7 @@
             </div>
         </div>
 
-        <div class="trip-card">
+        <div class="trip-card" data-category="romantic">
             <img src="j4.jpeg" alt="Manali">
             <div class="trip-info">
                 <h3>Manali</h3>
@@ -141,25 +142,25 @@
             </div>
         </div>
 
-        <div class="trip-card">
+        <div class="trip-card" data-category="cultural" onclick="redirectToPage('mysore.html')">
             <img src="j5.jpeg" alt="Mysore">
-            <div class="trip-info">
+            <div class="trip-info"  >
                 <h3>Mysore</h3>
                 <p>Karnataka, India</p>
                 <p>Round-trip from ₹5,499</p>
             </div>
         </div>
 
-        <div class="trip-card">
+        <div class="trip-card" data-category="family">
             <img src="j6.jpeg" alt="Varanasi">
-            <div class="trip-info">
+            <div class="trip-info"  >
                 <h3>Varanasi</h3>
                 <p>Uttar Pradesh, India</p>
                 <p>Round-trip from ₹6,799</p>
             </div>
         </div>
 
-        <div class="trip-card">
+        <div class="trip-card" data-category="beach">
             <img src="j7.jpeg" alt="Andaman">
             <div class="trip-info">
                 <h3>Andaman Islands</h3>
@@ -168,7 +169,7 @@
             </div>
         </div>
 
-        <div class="trip-card">
+        <div class="trip-card"  data-category="backpacking">
             <img src="j8.jpg" alt="Rann of Kutch">
             <div class="trip-info">
                 <h3>Rann of Kutch</h3>
@@ -177,35 +178,133 @@
             </div>
         </div>
 
-        <div class="trip-card">
+        <div class="trip-card" data-category="backpacking">
             <img src="j9.jpg" alt="Shimla">
-            <div class="trip-info">
+            <div class="trip-info" >
                 <h3>Shimla</h3>
                 <p>Himachal Pradesh, India</p>
                 <p>Round-trip from ₹6,299</p>
             </div>
         </div>
-    </div>
-</section><section class="section ad">
-    
-    <div class="destination-cards">
-        <div class="card">
-            <h2>Top job news in INDIA</h2>
-            <p>Know all the IT jobs in India. </p>
-            <img src="it1.jpeg" alt="Taj Mahal">
-            <h3><a href="../news/index.html">check here</a></h3>
-            <p></p>
+
+        <div class="trip-card" data-category="cultural">
+            <img src="j12.jpg" alt="Shimla">
+            <div class="trip-info">
+                <h3>patan</h3>
+                <p>Gujarat, India</p>
+                <p>Round-trip from ₹7,499</p>
+            </div>
+        </div>
+
+        <div class="trip-card" data-category="family">
+            <img src="j11.jpg" alt="Shimla">
+            <div class="trip-info">
+                <h3>mandu</h3>
+                <p>Madhya Pradesh, India</p>
+                <p>Round-trip from ₹5,299</p>
+            </div>
+        </div>
+
+        <div class="trip-card" data-category="backpacking">
+            <img src="j1o.jpg" alt="Shimla">
+            <div class="trip-info" >
+                <h3>Leh-Ladakh</h3>
+                <p>Jammu kashmir, India</p>
+                <p>Round-trip from ₹9,299</p>
+            </div>
         </div>
     </div>
-    <div class="card">
-        <h2>My Portfolio</h2>
-        <p>Know all the IT jobs in India. </p>
-        <img src="vn.png" alt="Goa Beach">
-        <h3>some of my works</h3>
-        <h3><a href="../portfolio/portfolio.html">reach me out</a></h3>
-    </div>
-</section>
+    <section class="section ad">
+        <div class="destination-cards">
+            <div class="card">
+                <h2>Top job news in INDIA</h2>
+                <p>Know all the IT jobs in India.</p>
+    
+                <!-- Video with autoplay on scroll -->
+                <video id="jobNewsVideo" width="100%" height="200px" muted>
+                    <source src="news.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    
+        <div class="card">
+            <h2>My Portfolio</h2>
+            <p>Know all the IT jobs in India.</p>
+            <img src="vn.png" alt="Goa Beach">
+            <h3>Some of my works</h3>
+            <h3><a href="../portfolio/portfolio.html">Reach me out</a></h3>
+        </div>
+    </section>
+    
+    
+    
+    
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const filterButtons = document.querySelectorAll(".filter-button");
+        const tripCards = document.querySelectorAll(".trip-card");
+    
+        filterButtons.forEach(button => {
+            button.addEventListener("click", function () {
+                const category = this.getAttribute("data-category");
+    
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove("active"));
+                this.classList.add("active");
+    
+                // Show/hide cards
+                tripCards.forEach(card => {
+                    if (category === "all" || card.getAttribute("data-category") === category) {
+                        card.style.display = "flex"; // Show matching cards
+                    } else {
+                        card.style.display = "none"; // Hide others
+                    }
+                });
+            });
+        });
+    });
 
+    // Function to play video when it comes into view
+        function playVideoOnScroll() {
+            let video = document.getElementById("jobNewsVideo");
+            let videoPosition = video.getBoundingClientRect().top;
+            let windowHeight = window.innerHeight;
+    
+            if (videoPosition < windowHeight && videoPosition > 0) {
+                video.play();
+            } else {
+                video.pause();
+            }
+        }
+    
+        // Event listener for scrolling
+        document.addEventListener("scroll", playVideoOnScroll);
+    
+        // Redirect to another page when clicking the video
+        document.getElementById("jobNewsVideo").addEventListener("click", function () {
+            window.location.href = "../news/index.html"; // Change this URL as needed
+        });
+    
+function redirectToPage(pageUrl) {
+    // Check if user is logged in
+    if (!localStorage.getItem("loggedIn")) {
+        alert("Please sign in to view more details.");
+        localStorage.setItem("returnUrl", pageUrl);
+        window.location.href = "signin.html";
+    } else {
+        window.location.href = pageUrl;
+    }
+}
+document.addEventListener("DOMContentLoaded", function () {
+    if (!localStorage.getItem("loggedIn")) {
+        alert("Please sign in to access this page.");
+        localStorage.setItem("returnUrl", window.location.href);
+        window.location.href = "signin.html";
+    }
+});
+
+    </script>
 
     <!-- FOOTER -->
     <footer>
